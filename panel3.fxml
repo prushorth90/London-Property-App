@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PanelThreeController">
+    <children>
+        <GridPane minHeight="40.0" minWidth="800.0" style="-fx-border-color: #a9a9a9;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <FlowPane alignment="CENTER_LEFT" hgap="5.0" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="backBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" prefWidth="50.0" text="&lt;" />
+                        <Button fx:id="nextBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#goForward" prefWidth="50.0" text="&gt;" />
+                    </children>
+                    <GridPane.margin>
+                        <Insets left="5.0" />
+                    </GridPane.margin>
+                </FlowPane>
+                <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <children>
+                        <Label text="From" />
+                        <ComboBox fx:id="fromBox" editable="true" onAction="#checkValidRange" prefWidth="80.0" promptText="_" />
+                        <Label text="To" />
+                        <ComboBox fx:id="toBox" editable="true" onAction="#checkValidRange" prefWidth="80.0" promptText="_" />
+                    </children>
+                    <GridPane.margin>
+                        <Insets right="5.0" />
+                    </GridPane.margin>
+                </FlowPane>
+            </children>
+        </GridPane>
+        <VBox minHeight="560.0" minWidth="800.0">
+            <children>
+                <HBox minHeight="280.0" minWidth="800.0">
+                    <children>
+                        <HBox minHeight="280.0" minWidth="400.0" style="-fx-background-color: beige; -fx-border-color: grey;">
+                            <children>
+                                <Button fx:id="statisticBox1Previous" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxOneBack" text="&lt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                                <VBox minHeight="280.0" minWidth="280.0">
+                                    <children>
+                                        <HBox minHeight="60.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox1Title" text="Label" />
+                                            </children>
+                                        </HBox>
+                                        <HBox minHeight="220.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox1Data" text="Label" />
+                                            </children></HBox>
+                                    </children>
+                                </VBox>
+                                <Button fx:id="statisticBox1Next" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxOneNext" text="&gt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                            </children>
+                        </HBox>
+                        <HBox minHeight="280.0" minWidth="400.0" style="-fx-background-color: beige; -fx-border-color: grey;">
+                            <children>
+                                <Button fx:id="statisticBox2Previous" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxTwoBack" text="&lt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                                <VBox minHeight="280.0" minWidth="280.0">
+                                    <children>
+                                        <HBox minHeight="60.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox2Title" text="Label" />
+                                            </children>
+                                        </HBox>
+                                        <HBox minHeight="220.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox2Data" text="Label" />
+                                            </children></HBox>
+                                    </children>
+                                </VBox>
+                                <Button fx:id="statisticBox2Next" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxTwoNext" text="&gt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                            </children>
+                        </HBox>
+                    </children></HBox>
+                <HBox minHeight="280.0" minWidth="800.0">
+                    <children>
+                        <HBox minHeight="280.0" minWidth="400.0" style="-fx-background-color: beige; -fx-border-color: grey;">
+                            <children>
+                                <Button fx:id="statisticBox3Previous" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxThreeBack" text="&lt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                                <VBox minHeight="280.0" minWidth="280.0">
+                                    <children>
+                                        <HBox minHeight="60.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox3Title" text="Label" />
+                                            </children>
+                                        </HBox>
+                                        <HBox minHeight="220.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox3Data" text="Label" />
+                                            </children></HBox>
+                                    </children>
+                                </VBox>
+                                <Button fx:id="statisticBox3Next" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxThreeNext" text="&gt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                            </children>
+                        </HBox>
+                        <HBox minHeight="280.0" minWidth="400.0" style="-fx-background-color: beige; -fx-border-color: grey;">
+                            <children>
+                                <Button fx:id="statisticBox4Previous" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxFourBack" text="&lt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                                <VBox minHeight="280.0" minWidth="280.0">
+                                    <children>
+                                        <HBox minHeight="60.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox4Title" text="Label" />
+                                            </children>
+                                        </HBox>
+                                        <HBox minHeight="220.0" minWidth="280.0" style="-fx-alignment: CENTER;">
+                                            <children>
+                                                <Label fx:id="statisticBox4Data" text="Label" />
+                                            </children></HBox>
+                                    </children>
+                                </VBox>
+                                <Button fx:id="statisticBox4Next" minHeight="260.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#boxFourNext" text="&gt;">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>

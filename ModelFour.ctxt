@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ModelFour
+comment0.text=\r\n\ For\ panel\ 4\ controller\ this\ is\ the\ model\ 4\ that\ handles\ logic\r\n\r\n\ @author\ \ Manivannan\ Prushorth,\ Hieu\ Trung\ Nguyen,\ Alexander\ Baker\r\n\ @version\ March\ 2021\r\n
+comment1.params=
+comment1.target=ModelFour()
+comment1.text=\r\n\ Constructor\ for\ model\ 4\r\n
+comment2.params=available
+comment2.target=void\ setAvailablePropertiesInRange(java.util.ArrayList)
+comment2.text=\r\n\ set\ the\ avaliable\ properties\ in\ given\ price\ range\r\n\ \r\n\ @param\ the\ avaliable\ listings\ from\ data\ set\r\n
+comment3.params=
+comment3.target=java.util.List\ getBoroughsInPriceRange()
+comment3.text=\r\n\ \r\n\ @return\ list\ of\ boroughs\ in\ price\ range\ specified\ at\ top\ of\ window\r\n
+numComments=4

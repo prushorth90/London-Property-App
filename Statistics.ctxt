@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Statistics
+comment0.text=\r\n\ An\ enum\ class\ that\ list\ all\ the\ statistics\ used\ in\ the\ application\r\n\r\n\ @author\ Hieu\ Trung\ Nguyen,\ Manivannan\ Prushorth,\ and\ Alexander\ Baker\r\n\ @version\ 2021\r\n
+comment1.params=title
+comment1.target=Statistics(java.lang.String)
+comment1.text=\r\n\ Constructor\ of\ Statistics\r\n
+comment2.params=
+comment2.target=java.lang.String\ getTitle()
+comment2.text=\r\n\ @return\ The\ title\ of\ the\ statistic\r\n
+comment3.params=
+comment3.target=java.lang.String\ getStat()
+comment3.text=\r\n\ @return\ The\ statistic\ value\r\n
+comment4.params=stat
+comment4.target=void\ setStat(java.lang.String)
+comment4.text=\r\n\ @param\ stat\ The\ statistic\ value\ to\ be\ set\r\n
+comment5.params=
+comment5.target=void\ resetStat()
+comment5.text=\r\n\ Reset\ the\ statistic\ to\ its\ default\ value\r\n
+numComments=6

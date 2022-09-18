@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=PropertyWindow
+comment0.text=\r\n\ A\ GUI\ class\ that\ load\ the\ popup\ window\ which\ displays\ when\ the\ user\r\n\ select\ a\ particular\ property\ to\ view\ more\ details\ about\ the\ property\r\n\r\n\ @author\ Hieu\ Trung\ Nguyen,\ Manivannan\ Prushorth,\ and\ Alexander\ Baker\r\n\ @version\ 202\r\n
+comment1.params=propertySelected
+comment1.target=void\ display(AirbnbListing)
+comment1.text=\r\n\ \ Load\ fxml\ elements\ and\ set\ the\ stage\ for\ the\ layout\ to\ be\r\n\ \ display.\r\n
+numComments=2

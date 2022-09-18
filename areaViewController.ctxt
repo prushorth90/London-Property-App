@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=AreaViewController
+comment0.text=\r\n\ A\ controller\ class\ that\ manage\ GUI\ elements\ of\ the\ pop\ up\ window\r\n\ which\ displays\ the\ list\ of\ properties\ within\ the\ user\ selected\r\n\ area/borough\r\n\r\n\ @author\ Hieu\ Trung\ Nguyen,\ Manivannan\ Prushorth,\ and\ Alexander\ Baker\r\n\ @version\ 2021\r\n
+comment1.params=
+comment1.target=javafx.collections.ObservableList\ getAvailablePropertiesInSelectedArea()
+comment1.text=\r\n\ Get\ a\ list\ of\ available\ properties\ for\ rent\ within\ the\ user\ selected\ price\ range\r\n\ and\ user\ selected\ area/borough.\r\n\r\n\ @return\ The\ list\ of\ available\ properties\ for\ rent\ within\ the\ user\ selected\ price\ range\r\n\ and\ user\ selected\ area/borough.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAreaName()
+comment2.text=\r\n\ Get\ the\ full\ name\ of\ the\ user\ selected\ area/borough\ based\ on\r\n\ the\ supplied\ area\ code\ (i.e.\ the\ abbreviation\ of\ the\ area/borough\r\n\ name)\r\n\r\n\ @return\ The\ full\ name\ of\ the\ user\ selected\ area/borough\r\n
+comment3.params=areaName
+comment3.target=void\ setAreaSelected(java.lang.String)
+comment3.text=\r\n\ Set\ the\ area\ code\ (i.e.\ the\ abbreviation\ of\ the\ user\ selected\ area/borough)\r\n\ to\ the\ specified\ value.\r\n\r\n\ @param\ areaName\ Area\ code\ (i.e.\ the\ abbreviation\ of\ the\ user\ selected\ area/borough)\r\n\ to\ the\ specified\ value.\r\n
+comment4.params=event
+comment4.target=void\ openPropertyWindow(javafx.scene.input.MouseEvent)
+comment4.text=\r\n\ Open\ a\ new\ window\ which\ display\ more\ details\ about\ the\ user\ selected\ property\ listing\r\n\r\n\ @param\ event\ The\ event\ in\ which\ the\ user\ clicked\ on\ a\ property\ listing\r\n\ @throws\ Exception\r\n
+comment5.params=
+comment5.target=void\ initialize()
+comment5.text=\r\n\ Initialise\ fxml\ elements\r\n
+numComments=6

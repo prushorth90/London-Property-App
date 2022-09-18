@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PanelFourController">
+   <children>
+      <GridPane minHeight="40.0" minWidth="800.0" style="-fx-border-color: #a9a9a9;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <FlowPane alignment="CENTER_LEFT" hgap="5.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="backBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" prefWidth="50.0" text="&lt;" />
+                  <Button fx:id="nextBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#goForward" prefWidth="50.0" text="&gt;" />
+               </children>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </FlowPane>
+            <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Label text="From" />
+                  <ComboBox fx:id="fromBox" editable="true" onAction="#checkValidRange" prefWidth="80.0" promptText="_" />
+                  <Label text="To" />
+                  <ComboBox fx:id="toBox" editable="true" onAction="#checkValidRange" prefWidth="80.0" promptText="_" />
+               </children>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </FlowPane>
+         </children>
+      </GridPane>
+      <Pane prefHeight="560.0" prefWidth="800.0">
+         <children>
+            <GridPane layoutX="15.0" layoutY="57.0" prefHeight="230.0" prefWidth="487.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="390.5" minWidth="10.0" prefWidth="104.5" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="709.5" minWidth="10.0" prefWidth="353.5" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="20.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="38.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="19.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="34.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="17.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitForm" text="Submit Form" GridPane.rowIndex="6" />
+                  <Label text="Email" GridPane.rowIndex="1" />
+                  <Label text="Name" />
+                  <TextField fx:id="name" GridPane.columnIndex="1" />
+                  <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Borough" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="boroughBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <Label layoutX="14.0" layoutY="27.0" text="Contact us and we will get back to you in a few days.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>

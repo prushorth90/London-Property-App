@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PanelTwoController">
+    <children>
+        <GridPane minHeight="40.0" minWidth="800.0" style="-fx-border-color: #a9a9a9;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <FlowPane alignment="CENTER_LEFT" hgap="5.0" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="backBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" prefWidth="50.0" text="&lt;" />
+                        <Button fx:id="nextBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#goForward" prefWidth="50.0" text="&gt;" />
+                    </children>
+                    <GridPane.margin>
+                        <Insets left="5.0" />
+                    </GridPane.margin>
+                </FlowPane>
+                <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <children>
+                        <Label text="From" />
+                        <ComboBox fx:id="fromBox" editable="true" onAction="#checkValidRange" prefWidth="80.0" promptText="_" />
+                        <Label text="To" />
+                        <ComboBox fx:id="toBox" editable="true" onAction="#checkValidRange" prefWidth="80.0" promptText="_" />
+                    </children>
+                    <GridPane.margin>
+                        <Insets right="5.0" />
+                    </GridPane.margin>
+                </FlowPane>
+            </children>
+        </GridPane>
+        <Pane minHeight="560.0" minWidth="800.0">
+            <children>
+                <Label layoutX="387.0" layoutY="14.0" text="Map" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Circle fx:id="enfi" fill="WHITE" layoutX="400.0" layoutY="74.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="hrgy" fill="WHITE" layoutX="371.0" layoutY="124.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="walt" fill="WHITE" layoutX="429.0" layoutY="124.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="barn" fill="WHITE" layoutX="313.0" layoutY="124.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="camd" fill="WHITE" layoutX="342.0" layoutY="173.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="bren" fill="WHITE" layoutX="284.0" layoutY="173.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="hrrw" fill="WHITE" layoutX="226.0" layoutY="173.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="isli" fill="WHITE" layoutX="400.0" layoutY="173.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="redb" fill="WHITE" layoutX="516.0" layoutY="173.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="hack" fill="WHITE" layoutX="458.0" layoutY="173.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="have" fill="WHITE" layoutX="574.0" layoutY="173.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="bark" fill="WHITE" layoutX="545.0" layoutY="223.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="newh" fill="WHITE" layoutX="487.0" layoutY="223.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="towh" fill="WHITE" layoutX="429.0" layoutY="223.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="wstm" fill="WHITE" layoutX="371.0" layoutY="223.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="kens" fill="WHITE" layoutX="313.0" layoutY="223.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="eali" fill="WHITE" layoutX="255.0" layoutY="223.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="hill" fill="WHITE" layoutX="197.0" layoutY="223.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="houn" fill="WHITE" layoutX="226.0" layoutY="272.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="hamm" fill="WHITE" layoutX="284.0" layoutY="272.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="wand" fill="WHITE" layoutX="342.0" layoutY="272.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="city" fill="WHITE" layoutX="400.0" layoutY="272.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="gwch" fill="WHITE" layoutX="458.0" layoutY="272.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="bexl" fill="WHITE" layoutX="516.0" layoutY="272.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="rich" fill="WHITE" layoutX="255.0" layoutY="322.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="mert" fill="WHITE" layoutX="313.0" layoutY="322.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="lamb" fill="WHITE" layoutX="371.0" layoutY="322.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="sthw" fill="WHITE" layoutX="429.0" layoutY="322.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="lews" fill="WHITE" layoutX="487.0" layoutY="322.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="king" fill="WHITE" layoutX="284.0" layoutY="371.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="sutt" fill="WHITE" layoutX="342.0" layoutY="371.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="croy" fill="WHITE" layoutX="400.0" layoutY="371.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fx:id="brom" fill="WHITE" layoutX="458.0" layoutY="371.0" onMouseClicked="#openAreaWindow" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                <Label layoutX="387.0" layoutY="66.0" mouseTransparent="true" text="ENFI" />
+                <Label layoutX="297.0" layoutY="116.0" mouseTransparent="true" text="BARN" />
+                <Label layoutX="354.0" layoutY="116.0" mouseTransparent="true" text="HRGY" />
+                <Label layoutX="412.0" layoutY="116.0" mouseTransparent="true" text="WALT" />
+                <Label layoutX="208.0" layoutY="165.0" mouseTransparent="true" text="HRRW" />
+                <Label layoutX="268.0" layoutY="165.0" mouseTransparent="true" text="BREN" />
+                <Label layoutX="324.0" layoutY="165.0" mouseTransparent="true" text="CAMD" />
+                <Label layoutX="390.0" layoutY="165.0" mouseTransparent="true" text="ISLI" />
+                <Label layoutX="441.0" layoutY="165.0" mouseTransparent="true" text="HACK" />
+                <Label layoutX="500.0" layoutY="165.0" mouseTransparent="true" prefWidth="32.0" text="REDB" />
+                <Label layoutX="558.0" layoutY="165.0" mouseTransparent="true" text="HAVE" />
+                <Label layoutX="184.0" layoutY="215.0" mouseTransparent="true" text="HILL" />
+                <Label layoutX="242.0" layoutY="215.0" mouseTransparent="true" text="EALI" />
+                <Label layoutX="297.0" layoutY="215.0" mouseTransparent="true" text="KENS" />
+                <Label layoutX="352.0" layoutY="215.0" mouseTransparent="true" text="WSTM" />
+                <Label layoutX="410.0" layoutY="215.0" mouseTransparent="true" text="TOWH" />
+                <Label layoutX="468.0" layoutY="215.0" mouseTransparent="true" text="NEWH" />
+                <Label layoutX="529.0" layoutY="215.0" mouseTransparent="true" text="BARK" />
+                <Label layoutX="208.0" layoutY="264.0" mouseTransparent="true" text="HOUN" />
+                <Label layoutX="265.0" layoutY="264.0" mouseTransparent="true" text="HAMM" />
+                <Label layoutX="323.0" layoutY="264.0" mouseTransparent="true" text="WAND" />
+                <Label layoutX="386.0" layoutY="264.0" mouseTransparent="true" text="CITY" />
+                <Label layoutX="438.0" layoutY="264.0" mouseTransparent="true" text="GWCH" />
+                <Label layoutX="501.0" layoutY="264.0" mouseTransparent="true" text="BEXL" />
+                <Label layoutX="241.0" layoutY="314.0" mouseTransparent="true" text="RICH" />
+                <Label layoutX="296.0" layoutY="314.0" mouseTransparent="true" text="MERT" />
+                <Label layoutX="354.0" layoutY="314.0" mouseTransparent="true" text="LAMB" />
+                <Label layoutX="411.0" layoutY="314.0" mouseTransparent="true" text="STHW" />
+                <Label layoutX="470.0" layoutY="314.0" mouseTransparent="true" text="LEWS" />
+                <Label layoutX="269.0" layoutY="363.0" mouseTransparent="true" text="KING" />
+                <Label layoutX="326.0" layoutY="363.0" mouseTransparent="true" text="SUTT" />
+                <Label layoutX="383.0" layoutY="363.0" mouseTransparent="true" text="CROY" />
+                <Label layoutX="440.0" layoutY="363.0" mouseTransparent="true" text="BROM" />
+            </children>
+        </Pane>
+    </children>
+</VBox>

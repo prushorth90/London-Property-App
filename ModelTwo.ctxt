@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ModelTwo
+comment0.text=\r\n\ Handles\ the\ functionality\ of\ the\ GUI\ components\ in\ panel\ two\r\n\r\n\ @author\ Manivannan\ Prushorth,\ Hieu\ Trung\ Nguyen,\ Alexander\ Baker\r\n\ @version\ 2021\r\n
+comment1.params=
+comment1.target=ModelTwo()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ModelTwo\r\n
+numComments=2

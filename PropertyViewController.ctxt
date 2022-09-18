@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PropertyViewController
+comment0.text=\r\n\ A\ controller\ for\ property\ view\ controller\ \r\n\r\n\ @author\ Hieu\ Trung\ Nguyen,\ Manivannan\ Prushorth,\ and\ Alexander\ Baker\r\n\ @version\ 2021\r\n
+comment1.params=propertySelected
+comment1.target=void\ setPropertySelected(AirbnbListing)
+comment1.text=\r\n\ Set\ the\ property\ selected\ to\ the\ specified\ value.\r\n\r\n\ @param\ propertySelected\ The\ property\ selected\ by\ the\ user\r\n
+comment2.params=
+comment2.target=void\ initialize()
+comment2.text=\r\n\ Initialise\ fxml\ elements\r\n
+numComments=3

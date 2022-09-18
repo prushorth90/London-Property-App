@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LondonBorough
+comment0.text=\r\n\ An\ enumeration\ class\ represent\ different\ boroughs\ in\ London.\r\n\ Each\ borough\ has\ an\ area\ code\ (i.e.\ the\ abbreviation\ of\ the\ borough\ name)\r\n\r\n\ @author\ Hieu\ Trung\ Nguyen,\ Manivannan\ Prushorth,\ and\ Alexander\ Baker\r\n\ @version\ 2021\r\n
+comment1.params=areaCode\ areaName
+comment1.target=LondonBorough(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ The\ constructor\ for\ Enum\ class\ LondonBorough.\ which\r\n\ create\ a\ borough\ enum\ with\ an\ area\ code\ and\ name.\r\n\r\n\ @param\ areaCode\ The\ abbreviation\ of\ borough\ name.\r\n\ @param\ areaName\ The\ full\ name\ of\ the\ borough.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAreaCode()
+comment2.text=\r\n\ Get\ the\ area\ code\ (i.e.\ the\ abbreviation\ of\ borough\ name).\r\n\r\n\ @return\ The\ abbreviation\ of\ borough\ name.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getAreaName()
+comment3.text=\r\nGet\ the\ full\ name\ of\ a\ borough.\r\n\r\n\ @return\ The\ full\ name\ of\ a\ borough\r\n
+numComments=4

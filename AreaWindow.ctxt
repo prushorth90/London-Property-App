@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=AreaWindow
+comment0.text=\r\n\ A\ GUI\ class\ that\ load\ GUI\ element\ for\ a\ new\ window\ which\ display\ the\r\n\ list\ of\ properties\ available\ for\ rent\ within\ an\ area.\r\n\r\n\ @author\ Hieu\ Trung\ Nguyen,\ Manivannan\ Prushorth,\ and\ Alexander\ Baker\r\n\ @version\ 2021\r\n
+comment1.params=areaSelected
+comment1.target=void\ display(java.lang.String)
+comment1.text=\r\n\ \ Load\ fxml\ elements\ and\ set\ the\ stage\ for\ the\ layout\ to\ be\r\n\ \ display.\r\n\r\n\ @param\ areaSelected\ The\ circle\ ID\ of\ the\ user\ selected\ area\r\n\ @throws\ Exception\r\n
+numComments=2

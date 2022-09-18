@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="500.0" minWidth="400.0" style="-fx-border-color: DARKGREY;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PropertyViewController">
+   <children>
+       <HBox minHeight="50.0" minWidth="400.0">
+         <children>
+            <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+               <children>
+                  <Label text="Property ID">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+               <children>
+                  <Label fx:id="propertyID" text="_">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Property Name">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="propertyName" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Host ID">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="hostName" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Host Name">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="hostID" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Neighbourhood">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="neighbourhood" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Room Type">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="roomType" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Price">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="price" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Minimum Nights">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="minimumNights" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Last Review">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="lastReview" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+       <HBox minHeight="50.0" minWidth="400.0">
+           <children>
+               <VBox minHeight="50.0" minWidth="150.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label text="Availability">
+                           <font>
+                               <Font name="Verdana Bold" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+               <VBox minHeight="50.0" minWidth="250.0" style="-fx-alignment: center; -fx-border-color: DARKGREY;">
+                   <children>
+                       <Label fx:id="availability" text="_">
+                           <font>
+                               <Font name="Verdana" size="12.0" />
+                           </font>
+                       </Label>
+                   </children>
+               </VBox>
+           </children>
+       </HBox>
+   </children>
+</VBox>
